@@ -10,20 +10,26 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>To Do List</title>
+    <title>Music Player</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="container-fluid">
-    <h1 id="music-name">sting for the moment</h1>
-    <img src="" id="music-cover" alt="cover">
-    <input type="range" id="music-time" value="0">
-    <div>
-        <i id="pre-btn" class="fas fa-backward"></i>
-        <i id="play-btn" class="fas fa-play"></i>
-        <i id="next-btn" class="fas fa-forward"></i>
+<body class="container-fluid col-md-2 pt-5 bg-dark">
+    <section class="row mt-5 pt-5">
+        <h1 id="music-name" class="d-flex justify-content-center ">sting for the moment</h1>
+        <div class="row col-md-12 mt-5 mb-2">
+        <img src="./assets/loseYourSelf.jpg" id="music-cover" alt="cover" class="rounded-circle col-md p-0">
+        <input type="range" id="music-time" value="0" class="text-center col-md-12 mt-5">
     </div>
-
+        <div class="mx-auto d-flex justify-content-center mt-2">
+            <span class="d-flex justify-content-center"><i id="back-btn" class="fa-solid fa-backward-step"></i></span>
+            <span><i id="pre-btn" class="fas fa-backward"></i></span>
+            <span><i id="play-btn" class="fas fa-play"></i></span>
+            <span><i id="next-btn" class="fas fa-forward"></i></span>
+            <span><i id="forward-btn" class="fa-solid fa-forward-step"></i></span>
+        </div>
+    </section>
     <script src="./script.js"></script>
 </body>
+
 </html>
