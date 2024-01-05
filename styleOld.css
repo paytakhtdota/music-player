@@ -1,0 +1,57 @@
+h1 {
+    color: white;
+}
+
+i {
+    margin: 5px 15px 15px 0;
+    width: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+i:hover {
+    cursor: pointer;
+    color: rgb(0, 191, 255);
+    filter: drop-shadow(10px);
+    -webkit-text-stroke: 1px white;
+}
+
+i#play-btn {
+    padding-left: 2px;
+}
+
+i#forward-btn {
+    padding-left: 4px;
+}
+
+img {
+  animation-name: colorful;
+  animation-duration: 10s; /* مدت زمان اجرای انیمیشن را 5 ثانیه تعیین کنید */
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+@keyframes colorful {
+    0% { box-shadow: 0px 0px 45px 0px #ff000050; }
+    5% { box-shadow: 0px 0px 45px 0px #ff008050; }
+    10% { box-shadow: 0px 0px 45px 0px #ff800050; }
+    15% { box-shadow: 0px 0px 45px 0px #ffff0050; }
+    20% { box-shadow: 0px 0px 45px 0px #80ff0050; }
+    25% { box-shadow: 0px 0px 45px 0px #00ff0050; }
+    30% { box-shadow: 0px 0px 45px 0px #00ff8050; }
+    35% { box-shadow: 0px 0px 45px 0px #00ffff50; }
+    40% { box-shadow: 0px 0px 45px 0px #0080ff50; }
+    45% { box-shadow: 0px 0px 45px 0px #0000ff50; }
+    50% { box-shadow: 0px 0px 45px 0px #8000ff50; }
+    55% { box-shadow: 0px 0px 45px 0px #ff00ff50; }
+    60% { box-shadow: 0px 0px 45px 0px #ff80ff50; }
+    65% { box-shadow: 0px 0px 45px 0px #ffff8050; }
+    70% { box-shadow: 0px 0px 45px 0px #80ffff50; }
+    75% { box-shadow: 0px 0px 45px 0px #00ffff50; }
+    80% { box-shadow: 0px 0px 45px 0px #0080ff50; }
+    85% { box-shadow: 0px 0px 45px 0px #0000ff50; }
+    90% { box-shadow: 0px 0px 45px 0px #8000ff50; }
+    95% { box-shadow: 0px 0px 45px 0px #ff00ff50; }
+    100% { box-shadow: 0px 0px 45px 0px #ff000050; }
+    
+  }
