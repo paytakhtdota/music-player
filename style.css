@@ -28,6 +28,7 @@ img {
   animation-name: colorful;
   animation-duration: 10s; /* مدت زمان اجرای انیمیشن را 5 ثانیه تعیین کنید */
   animation-iteration-count: infinite;
+  animation-play-state: paused;
 }
 
 @keyframes colorful {
