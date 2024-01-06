@@ -9,19 +9,24 @@ const title = document.querySelector("h1#music-name");
 
 let musics = [
     {
-        name: "Lose Your Self",
-        cover: "./assets/loseYourSelf.jpg",
-        audio: new Audio("./assets/loseYourSelf.mp3")
+        name: "Bloody Tears", cover: "./assets/Bloody-Tears-Quincas-Moreira.png",
+            audio: new Audio("./assets/Bloody-Tears-Quincas-Moreira.mp3")
     },
     {
-        name: "I ain Worried",
-        cover: "./assets/IAinTWorried.jpg",
-        audio: new Audio("./assets/IAinTWorried.mp3")
+        name: "Emergency On Level3", cover: "./assets/Emergency-On-Level3-Jeremy-Korpas.png",
+            audio: new Audio("./assets/Emergency-On-Level3-Jeremy-Korpas.mp3")
     },
     {
-        name: "Vacation",
-        cover: "./assets/DirtyHeadsVacation.jpg",
-        audio: new Audio("./assets/DirtyHeadsVacation.mp3")
+        name: "Enough Neffex", cover: "./assets/Enough-NEFFEX.jpg",
+            audio: new Audio("./assets/Enough-NEFFEX.mp3")
+    },
+    {
+        name: "Gril on Top", cover: "./assets/GirlOnTop-AmyLynn-theHoneymen.png",
+            audio: new Audio("./assets/GirlOnTop-AmyLynn-theHoneymen.mp3")
+    },
+    {
+        name: "Pentagram", cover: "./assets/Pentagram-Audionautix.png",
+            audio: new Audio("./assets/Pentagram-Audionautix.mp3")
     },
 ];
 
