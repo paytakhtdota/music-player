@@ -121,13 +121,11 @@ function convertor(secends) {
     }
     else { return [0, padStart(secends)] }
 } 
-
+*/
 // For converting 1 digit number to 2 digit numbers 1 => 01 or 0 => 00
 function padStart(num) { 
     return num.toString().padStart(2, "0");
 }
-*/
-
 
 function formatTime(seconds) { // A function to convert seconds to minutes - and return "mins:secs" format >>  00:00
     const minutes = Math.floor(seconds / 60);
