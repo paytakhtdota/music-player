@@ -101,16 +101,13 @@ function changeMusic(state) {
     document.querySelector("button#play-btn i.fa-solid").classList.replace("fa-pause", "fa-play")
     animaton.style.animationPlayState = "paused";
     cover.style.animationPlayState = "paused";
-    //Increment currentMusic by 1, then take the remainder with musics.length.
-    //If remainder is 0, set currentMusic to 0.
-    //Otherwise, set currentMusic to remainder.
     if (state == "next") {
-        currentMusic = (currentMusic + 1) % musics.length;
-    } else if (state == "pre") {
-        currentMusic = (currentMusic - 1 + musics.length) % musics.length;
+        currentMusic = (currentMusic + 1) % musics.length;  //Increment currentMusic by 1, then take the remainder with musics.length.
+    } else if (state == "pre") {                            //If remainder is 0, set currentMusic to 0.
+        currentMusic = (currentMusic - 1 + musics.length) % musics.length;//Otherwise, set currentMusic to remainder.
     }
-    currentMusicF(currentMusic);
-    timeUpDater();
+    currentMusicF(currentMusic); // Set Chosen music , cover and name
+    timeUpDater(); // Cause of change the audio object we need set an event lisener on new audio object
 }
 
 /* It's the first function I made for convert secends to minutes but I replace it with "formatTime()"
