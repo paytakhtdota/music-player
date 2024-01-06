@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+:root {
+    --clr-0: #001b27;
+    --clr-1: #052b2f;
+    --clr-2: #073438;
+    --clr-3: #0e4b50;
+    --clr-4: #2d8f85;
+    --clr-5: #637c54;
+    --clr-6: #fd004c;
+    --clr-7: #fe9000;
+    --clr-8: #fff020;
+    --clr-9: #3edf4b;
+    --clr-10: #3363ff;
+    --clr-11: #b102b7;
+    --clr-12: #ffffff;
+    
+}
+
+body {
+    background-color: var(--clr-0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body main {
+    width: 600px;
+    height: 600px;
+    }
+
+h1 {
+    color: var(--clr-12);
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: conic-gradient(var(--clr-6), var(--clr-7), var(--clr-8), var(--clr-9), var(--clr-10), var(--clr-11), var(--clr-6));
+    backdrop-filter: blur(3px);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.5);
+    animation-duration : 5s;
+    animation-name: rotaing;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.card {
+    /* کلاس card اصلاح‌شده */
+    display: flex;
+    position: relative;
+    left: 20x;
+    top: 20px;
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+img#cover {
+    display: flex;
+    position: relative;
+    width: 570px;
+    height: 570px;
+    border-radius: 50%;
+    left: 15x;
+    top: 15px;
+    filter: none;
+    animation-duration : 5s;
+    animation-name: revRotaing;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes rotaing{
+   0%{transform: rotate(360deg);}
+   100%{transform: rotate(-360deg);}
+}
+
+@keyframes revRotaing{
+    0%{transform: rotate(-360deg);}
+    100%{transform: rotate(360deg);}
+ }
+
+ input{
+    margin-top: 35px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+ #timer{
+    color: var(--clr-12);
+    padding-left: 10px;
+    font-size: 24px;
+    display: flex;
+    justify-content:center ;
+    font-family: 'League Gothic', sans-serif;
+ }
+
+ div.group-button{
+    display: flex;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 5px;
+    width: 86%;
+ }
+
+ button{
+    margin: 10px;
+    width: 50px;
+    height: 30px;;
+    font-size: 18px;
+ }
+
+ button:hover{
+    cursor: pointer;
+    background-color: #d2eaff;
+    color: #0036c0;
+ }
